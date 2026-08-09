@@ -1,0 +1,49 @@
+{
+  "name": "crossval-plan-vs-actual",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plan vs Actual Tracker — monthly budget targets, actual spend, variance reporting with locked periods.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "seed": "tsx scripts/seed.ts",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "csv-parse": "^5.5.6",
+    "jose": "^5.9.6",
+    "mongoose": "^8.8.3",
+    "next": "14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.13.3",
+    "swr": "^2.2.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.17.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.18",
+    "mongodb-memory-server": "^10.1.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
