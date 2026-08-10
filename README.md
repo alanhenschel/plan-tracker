@@ -7,7 +7,7 @@ over a date range — with **server-enforced period locking** so closed months c
 Built as a take-home for CrossVal (Full Stack Developer). Next.js 14 App Router + TypeScript +
 MongoDB (Mongoose 8), single codebase for API and UI.
 
-**Live URL:** _(pending deployment — see [Deployment](#deployment) below)_
+**Live URL:** [crossval-eight.vercel.app](https://crossval-eight.vercel.app) — demo login `demo@crossval.test` / `Demo1234!`
 
 ---
 
@@ -532,8 +532,8 @@ Lambda deployment than it does on Vercel.
 
 ## Deployment
 
-Not yet deployed. These are the exact steps; they need your own MongoDB Atlas and Vercel accounts
-(both have free tiers sufficient for this app).
+Deployed at [crossval-eight.vercel.app](https://crossval-eight.vercel.app) (Vercel + MongoDB Atlas
+M0, both free tier). These are the exact steps to reproduce the deployment from scratch.
 
 ### 1. MongoDB Atlas
 
@@ -589,7 +589,7 @@ MONGODB_URI='mongodb+srv://…/crossval?retryWrites=true&w=majority' npm run see
 It should print **SELF-CHECK PASSED**. The script is idempotent — running it twice produces the same
 state.
 
-### 5. Verify and record the URL
+### 5. Verify
 
 1. Open the Vercel URL, log in as `demo@crossval.test` / `Demo1234!`.
 2. Go to **Report**, set the range to **Q1 2026**, and confirm the four sample rows match the table
@@ -597,7 +597,8 @@ state.
 3. **Upload a CSV via the UI** (`scripts/sample-actuals.csv` on the Actuals page). This exercises
    the multipart path specifically — worth confirming once on the live runtime.
 4. Go to **Locks**, lock 2026-01, return to **Plans**, and confirm editing that month is refused.
-5. Put the live URL at the top of this README (replace the placeholder) and in the submission email.
+
+All four checks above have been run against the live deployment.
 
 ### Serverless connection note (already handled)
 

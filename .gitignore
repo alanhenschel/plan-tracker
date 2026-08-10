@@ -40,3 +40,4 @@ yarn-error.log*
 # local tooling/notes (not part of the app)
 /.claude/
 /work.log.md
+.env*
